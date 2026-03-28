@@ -4,8 +4,8 @@
 [![Discord](https://img.shields.io/discord/532695326117593112.svg?colorB=7289DA&label=Discord&logo=Discord&logoColor=7289DA&style=flat-square)](https://discord.gg/qHNByUW)
 [![Release](https://img.shields.io/github/release/pyouroboros/ouroboros.svg?style=flat-square)](https://hub.docker.com/r/pyouroboros/ouroboros/)
 [![Python Version](https://img.shields.io/pypi/pyversions/ouroboros-cli.svg?style=flat-square)](https://pypi.org/project/ouroboros-cli/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/pyouroboros/ouroboros.svg?style=flat-square)](https://hub.docker.com/r/pyouroboros/ouroboros/)
-[![Layers](https://images.microbadger.com/badges/image/pyouroboros/ouroboros.svg)](https://microbadger.com/images/pyouroboros/ouroboros)  
+[![Docker Pulls](https://img.shields.io/docker/pulls/techblog/ouroboros.svg?style=flat-square)](https://hub.docker.com/r/techblog/ouroboros/)
+[![Layers](https://images.microbadger.com/badges/image/techblog/ouroboros.svg)](https://microbadger.com/images/techblog/ouroboros)  
 
 Automatically update your running Docker containers to the latest available image.
 
@@ -24,7 +24,7 @@ Ouroboros will monitor (all or specified) running docker containers and update t
 
 ## Getting Started
 
-More detailed usage and configuration can be found on [the wiki](https://github.com/pyouroboros/ouroboros/wiki).
+More detailed usage and configuration can be found on [the wiki](https://github.com/t0mer/ouroboros/wiki).
 
 ### Docker
 
@@ -33,14 +33,14 @@ Ouroboros is deployed via docker image like so:
 ```bash
 docker run -d --name ouroboros \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  pyouroboros/ouroboros
+  techblog/ouroboros
 ```
 
 > This is image is compatible for amd64, arm32, and arm64 CPU architectures
 
 or via `docker-compose`:
 
-[Official Example](https://github.com/pyouroboros/ouroboros/blob/master/docker-compose.yml)
+[Official Example](https://github.com/t0mer/ouroboros/blob/master/docker-compose.yml)
 
 ### Pip
 
@@ -59,7 +59,7 @@ $ ouroboros --interval 300 --log-level debug
 > This can be useful if you would like to create a `systemd` service or similar daemon that doesn't run in a container
 
 ## Examples
-Per-command and scenario examples can be found in the [wiki](https://github.com/pyouroboros/ouroboros/wiki/Usage)
+Per-command and scenario examples can be found in the [wiki](https://github.com/t0mer/ouroboros/wiki/Usage)
 
 ## Contributing
 
